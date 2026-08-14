@@ -77,7 +77,7 @@ class TargetIos(Target):
         try:
             import subprocess
             if subprocess.run([executable, "-c", "from kivy_ios.toolchain import main;main()"], shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE).returncode == 1:
-            return 0
+                return 0
         except:
             try:
                 try:
