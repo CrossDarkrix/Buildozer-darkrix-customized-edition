@@ -60,8 +60,8 @@ MSG_P4A_RECOMMENDED_NDK_ERROR = (
 class TargetAndroid(Target):
     targetname = 'android'
     p4a_directory_name = "python-for-android"
-    p4a_fork = 'kivy'
-    p4a_branch = 'master'
+    p4a_fork = 'CrossDarkrix'
+    p4a_branch = 'main'
     p4a_commit = 'HEAD'
     p4a_recommended_ndk_version = None
     extra_p4a_args = ''
@@ -639,7 +639,7 @@ class TargetAndroid(Target):
             'app', 'p4a.fork', self.p4a_fork
         )
         p4a_url = self.buildozer.config.getdefault(
-            'app', 'p4a.url', f'https://github.com/{p4a_fork}/python-for-android.git'
+            'app', 'p4a.url', f'https://github.com/CrossDarkrix/python-for-android.git'
         )
         p4a_branch = self.buildozer.config.getdefault(
             'app', 'p4a.branch', self.p4a_branch
